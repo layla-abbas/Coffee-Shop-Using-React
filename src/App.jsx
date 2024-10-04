@@ -8,8 +8,8 @@ function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={
-        <div className='flex justify-center items-center h-full'>
-          <h1 className='text-amber-950'>
+        <div className='h-screen flex justify-center items-center '>
+          <h1 className='text-amber-800 font-bold text-4xl'>
 
           Loading...
 
