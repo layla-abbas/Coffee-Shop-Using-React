@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 
 export default function FavCards() {
 
+
     const [favoriteCoffees, setFavoriteCoffees] = useState([]);
+
 
     useEffect(() => {
       const savedFavorites = JSON.parse(localStorage.getItem('favoriteCoffees')) || [];
       setFavoriteCoffees(savedFavorites);
     }, []);
+    
 
   return (
     <div className="flex justify-center ">
