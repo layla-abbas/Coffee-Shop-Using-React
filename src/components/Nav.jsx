@@ -29,13 +29,13 @@ lg:gap-8'>
     <li className='text-xs font-semibold text-amber-800
     md:text-lg
     lg:text-lg '>
-    <a href="#">Store</a>
+    <Link to={'/'}>Store</Link>
     </li>
     
     <li className='text-xs font-semibold text-amber-800
     md:text-lg
     lg:text-lg'>
-   <Link to={'/favorite'} href="#"> Favorite</Link>
+   <Link to={'/favorite'} > Favorite</Link>
     </li>
 
     <li className='text-xs font-semibold text-amber-800
