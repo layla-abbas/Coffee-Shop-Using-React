@@ -1,19 +1,21 @@
-import Home from './pages/Home'
-import './App.css'
-import { BrowserRouter, Routes , Route } from 'react-router-dom'
-import Favorite from './pages/Favorite'
+import { Suspense, lazy } from 'react';
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+const Home = lazy(() => import('./pages/Home'));
+const Favorite = lazy(() => import('./pages/Favorite'));
 
 function App() {
-  
-
   return (
- <BrowserRouter>
-  <Routes>
-    <Route path='/' element={<Home />} />
-    <Route path='/favorite' element={<Favorite />} />
-  </Routes>
- </BrowserRouter>
-  )
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/favorite' element={<Favorite />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
+
