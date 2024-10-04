@@ -7,7 +7,16 @@ const Favorite = lazy(() => import('./pages/Favorite'));
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={
+        <div className='flex justify-center items-center h-full'>
+          <h1 className='text-amber-950'>
+
+          Loading...
+
+          </h1>
+        </div>}
+
+        >
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/favorite' element={<Favorite />} />
