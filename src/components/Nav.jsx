@@ -41,13 +41,13 @@ lg:gap-8'>
     <li className='text-xs font-semibold text-amber-800
     md:text-lg
     lg:text-lg'>
-    <a href="#">Blog</a>
+    <Link to={'/blog'}>Blog</Link>
     </li>
 
     <li className='text-xs font-semibold text-amber-800
     md:text-lg
     lg:text-lg'>
-   <a href="#">About</a>
+   <Link to={'/about'} >About</Link>
     </li>
 </ul>
         </div>

@@ -87,7 +87,7 @@ export default function Cards() {
             type="text"
             placeholder="Search..."
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)} // تحديث قيمة البحث
+            onChange={(e) => setSearchTerm(e.target.value)} 
             style={{ backgroundColor: '#F1ECE8' }}
             className="rounded-full h-7 w-40 p-2 text-sm text-amber-900 font-semibold focus:outline-amber-900
              md:w-44 md:h-8
